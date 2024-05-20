@@ -1,0 +1,49 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">New Title</li>
+  </ol>
+</nav>
+
+{{#if alert}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  {{alert}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+<form class="row g-3 needs-validation" method="POST" action="/addtitles" novalidate>
+
+  <div class="mb-3">
+    <input class="form-control" type="text" placeholder="titleID" aria-label="default input example" name="titleID">
+  </div>
+
+  <div class="mb-3">
+    <input class="form-control" type="text" placeholder="title" aria-label="default input example" name="title">
+  </div>
+
+  <div class="mb-3">
+    <input class="form-control" type="text" placeholder="pubID" aria-label="default input example" name="pubID">
+  </div>
+
+  <div class="mb-3">
+    <input class="form-control" type="text" placeholder="subID" aria-label="default input example" name="subID">
+  </div>
+
+  <div class="mb-3">
+    <input class="form-control" type="text" placeholder="pubDate" aria-label="default input example" name="pubDate">
+  </div>
+
+  <div class="mb-3">
+    <input class="form-control" type="text" placeholder="cover" aria-label="default input example" name="cover">
+  </div>
+
+  <div class="mb-3">
+    <input class="form-control" type="text" placeholder="price" aria-label="default input example" name="price">
+  </div>
+
+  <div class="col-12 d-grid">
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </div>
+
+</form>
